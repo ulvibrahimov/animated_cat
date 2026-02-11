@@ -60,6 +60,9 @@ class Animation_Screen : AppCompatActivity(), SensorEventListener {
                     textToSpeech.speak("I can see you in the dark", TextToSpeech.QUEUE_FLUSH,null,null)
                 }else{
                     layout.setBackgroundColor(Color.BLACK)
+
+
+
                 }
             }
         }
