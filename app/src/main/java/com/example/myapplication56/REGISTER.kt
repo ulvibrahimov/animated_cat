@@ -34,10 +34,13 @@ class REGISTER : AppCompatActivity() {
                 val password: String = editTxtPassword.text.toString()
                 val cPassword: String = editTxtConfirmPassword.text.toString()
                 val fullname: String = editTxtFullName.text.toString()
-                shared.putString("email",email).apply ()
-                shared.putString("password",password).apply ()
-                shared.putString("cPassword",cPassword).apply ()
-                shared.putString("fullname",fullname).apply ()
+                val data = "password: $fullname"
+                shared.putString(email,data)
+                shared.apply()
+//                shared.putString("email",email).apply ()
+//                shared.putString("password",password).apply ()
+//                shared.putString("cPassword",cPassword).apply ()
+//                shared.putString("fullname",fullname).apply ()
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
 
